@@ -1,0 +1,16 @@
+citHeader("To cite package 'maRketSim' in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE )
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry = "Manual",
+         title = "maRketSim: Market simulator for R",
+         author = personList(as.person("Ari B. Friedman")),
+         year = year,
+         note = vers,
+         textVersion =
+         paste0("Ari B. Friedman (",
+               year,
+               "). maRketSim: Market simulator for R. ",
+               vers, "."))
+

@@ -1,0 +1,6 @@
+exportPattern("[a-zA-Z]") # Export all functions
+exportMethods(print)
+exportMethods(plot)
+exportMethods(as.data.frame)
+exportMethods(summary)
+exportMethods(as)
